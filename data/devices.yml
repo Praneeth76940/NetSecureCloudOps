@@ -1,0 +1,12 @@
+devices:
+  - name: R1
+    ip: 192.168.206.10
+    username: praneeth
+    password: gns3pass
+    device_type: cisco_ios
+
+  - name: R2
+    ip: 192.168.206.11
+    username: praneeth
+    password: gns3pass
+    device_type: cisco_ios
