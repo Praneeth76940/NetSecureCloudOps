@@ -53,16 +53,23 @@ This project **automates** that entire workflow by:
 
 ```
 NetSecureCloudOps/
-├── scripts/               # All Python automation scripts
-│   ├── discovery_and_push.py      # Discover devices & push to NetBox
-│   ├── config_backup.py           # Backup running config to file
-│   └── push_interfaces.py         # Push interfaces & IPs to NetBox
+├── scripts/                        # All Python automation scripts
+│   ├── discovery_and_push.py       # Discover devices & push them to NetBox
+│   ├── config_backup.py            # Backup running configurations from devices
+│   └── push_interfaces.py          # Push interface and IP details to NetBox
 ├── data/
-│   └── devices.yml        # YAML inventory of routers/switches
+│   └── devices.yml                 # YAML inventory of network devices (IP, credentials, type)
 ├── backups/
-│   └── R1_config.txt      # Sample backup file
-├── requirements.txt       # Python dependencies
-└── README.md
+│   └── R1_config.txt               # Sample configuration backup of a device
+├── requirements.txt                # Python dependencies to run the scripts
+├── README.md                       # Project documentation and usage instructions
+└── output_samples/                 # Sample visual outputs (GNS3 diagram, IPAM views, interfaces)
+    ├── Netboxproject.gns3
+    ├── gns_netops.png
+    ├── Netops_Interfaceshtml
+    ├── Netops_Ipam.html
+    └── Netops_Pushinterfaces.html
+
 ```
 
 ---
